@@ -1,53 +1,41 @@
-/*// BASE STYLES //*/
 
-html, body{
-  height: 100%;
-  width:100%;
-  overflow: hidden;
-  margin: 0;
+body, html {
+    height: 100%;
+    margin: 0;
 }
 
-.grass, .sky, .road{
-  position: relative;
+.bgimg {
+    background-image: url('https://picsum.photos/200');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
 }
 
-.sky{
-  height: 40%;
-  background: skyblue;
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
 }
 
-.grass{
-  height: 30%;
-  background: seagreen;
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
 }
 
-.road{
-  height: 30%;
-  background: dimgrey;
-  box-sizing: border-box;
-  border-top: 10px solid grey;
-  border-bottom: 10px solid grey;
-  width: 100%;
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.lines{
-  box-sizing: border-box;
-  border: 5px dashed #fff;
-  height: 0px;
-  width: 100%;
-  position: absolute;
-  top: 45%;
+hr {
+    margin: auto;
+    width: 40%;
 }
-
-/*// ELEMENTS TO ANIMATE //*/
-
-
-
-/*// KEYFRAMES //*/
-
-
-
-
-
-
-
